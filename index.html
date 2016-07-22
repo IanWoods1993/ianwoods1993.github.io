@@ -6,8 +6,11 @@
     };p[i].q=p[i].q||[];n=l.createElement(o);g=l.getElementsByTagName(o)[0];n.async=1;
     n.src=w;g.parentNode.insertBefore(n,g)}}(window,document,'script','//d1fc8wv8zag5ca.cloudfront.net/2.5.3/sp.js','snowplow'));
     window.snowplow('newTracker', 'cf', 'events.fivetran.com/snowplow/1k56c2c4xlti6', { // Initialize a tracker
-      appId: "a_dope_app" ,
-      cookieDomain: null
+      appId: "a_dope_app",
+      cookieDomain: null,
+			contects: {
+				geolocation: true
+			}
     });
     window.snowplow('trackPageView');
 		window.snowplow('enableLinkClickTracking');
@@ -20,5 +23,6 @@
   <body>
     <p> "This page is just for kicks" </p>
 		<a href="https://www.google.com">this is just a link to google</a>
-  </body>
+		<p> "Geolocation should now be enabled" </p>
+	</body>
 </html>
