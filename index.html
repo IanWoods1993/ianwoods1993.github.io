@@ -10,7 +10,8 @@
       cookieDomain: null
     });
     window.snowplow('trackPageView');
-    </script>
+		window.snowplow('enableLinkClickTracking');
+		</script>
     <meta charset="utf-8">
     <title>title</title>
     <link rel="stylesheet" href="style.css">
@@ -18,5 +19,6 @@
   </head>
   <body>
     <p> "This page is just for kicks" </p>
+		<a href="google.com">this is just a link to google</a>
   </body>
 </html>
